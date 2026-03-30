@@ -1,0 +1,66 @@
+{
+  "name": "self-improve",
+  "version": "2.2.0",
+  "description": "A pluggable self-improvement framework for AI agents. Enables agents to learn from mistakes, corrections, and feedback.",
+  "keywords": [
+    "openclaw",
+    "agent",
+    "self-improvement",
+    "learning",
+    "ai-agent",
+    "memory",
+    "feedback"
+  ],
+  "author": "OpenClaw Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openclaw/self-improve"
+  },
+  "bugs": {
+    "url": "https://github.com/openclaw/self-improve/issues"
+  },
+  "homepage": "https://github.com/openclaw/self-improve#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module",
+  "main": "scripts/run-all.mjs",
+  "bin": {
+    "self-improve": "./scripts/run-all.mjs"
+  },
+  "scripts": {
+    "postinstall": "echo 'Run: node scripts/setup.mjs --config user-config.yaml'",
+    "setup": "node scripts/setup.mjs",
+    "run": "node scripts/run-all.mjs",
+    "status": "node scripts/status.mjs",
+    "report": "node scripts/report.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {},
+  "files": [
+    "scripts/",
+    "modules/",
+    "prompts/",
+    "data/",
+    "SKILL.md",
+    "SYSTEM.md",
+    "ENGINE.md",
+    "RUNTIME.md",
+    "config.yaml",
+    "user-config.yaml",
+    "README.md",
+    "INSTALL.md",
+    "changelog.md",
+    "LICENSE"
+  ],
+  "openclaw": {
+    "skillType": "framework",
+    "requires": [
+      "openclaw>=2026.3.0"
+    ],
+    "installCommand": "node scripts/setup.mjs",
+    "documentation": "SYSTEM.md"
+  }
+}
