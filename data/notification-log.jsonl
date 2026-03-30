@@ -1,0 +1,19 @@
+# 通知日志
+
+> 独立追踪通知历史，不与 PENDING.md 混在一起
+
+## 格式
+
+```jsonl
+{"ts":"YYYY-MM-DDTHH:MM:SS+TZ","proposal_id":"P-XXX","notified":true}
+```
+
+## 用途
+
+- notify 步骤读取此文件判断是否已通知
+- 每次通知后追加记录，永不删除
+- 可追溯历史通知记录
+
+## 通知记录
+
+（安装后由系统自动填充）
