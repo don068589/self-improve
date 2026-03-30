@@ -1,4 +1,4 @@
-# Self-Improve: Agent Evolution System
+﻿# Self-Improve: Agent Evolution System
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js >= 18](https://img.shields.io/badge/Node.js->=18-green.svg)](https://nodejs.org/)
@@ -19,6 +19,13 @@ AI agents make mistakes. They repeat them. They forget lessons learned. Self-Imp
 - **Memory management** - Three-tier memory (HOT/WARM/COLD) for efficient retrieval
 - **Safe evolution** - All system changes require explicit approval
 
+### Why This System?
+
+Unlike memory frameworks that require complex setup, this is a **zero-dependency approach**:
+- **No database** - Pure Markdown + YAML storage
+- **Privacy-first** - All data stays local
+- **Modular** - Use only what you need
+- **Safe evolution** - System changes require explicit approval
 ## Platform Compatibility
 
 | Platform | Support | Notes |
